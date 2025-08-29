@@ -12,7 +12,9 @@ export default function ProductCard({ title, price, imageUrl, buyLink }: Product
             <h2 className="font-semibold text-lg">{title}</h2>
             <p className="text-gray-600">{price}</p>
             <a
-                href={buyLink}
+                href={buyLink} // PayPal URL
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
             >
                 Buy Now
